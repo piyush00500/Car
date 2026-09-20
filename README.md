@@ -1,261 +1,410 @@
-# Car Data Cleaning & Exploratory Data Analysis
+# 🚗 Car Data Cleaning & Exploratory Data Analysis
 
-A comprehensive data cleaning and exploratory data analysis (EDA) project focused on automotive datasets. This project demonstrates essential data science techniques including data cleaning, preprocessing, and in-depth statistical analysis.
+A complete **Data Cleaning and Exploratory Data Analysis (EDA)** project using Python to analyze and understand automotive data.
 
-## 📋 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Components](#project-components)
-- [Key Findings](#key-findings)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-
-## 🎯 Project Overview
-
-This project is dedicated to the complete process of data cleaning and exploratory analysis of automotive datasets. The workflow includes:
-
-1. **Data Loading & Inspection** - Understanding the raw data structure
-2. **Data Cleaning** - Handling missing values, duplicates, and data quality issues
-3. **Data Preprocessing** - Formatting and transforming data for analysis
-4. **Exploratory Data Analysis** - Uncovering patterns, trends, and insights
-5. **Statistical Analysis** - Generating meaningful insights from the data
-
-The project serves as a practical guide for anyone interested in learning data cleaning techniques and performing exploratory data analysis in Python.
-
-## ✨ Features
-
-- **Comprehensive Data Cleaning**: Handle missing values, duplicates, outliers, and inconsistent data types
-- **Detailed EDA**: Statistical summaries, distributions, correlations, and relationships between variables
-- **Data Visualization**: Matplotlib and Seaborn-based visualizations for intuitive understanding
-- **Well-Documented Code**: Clear comments and markdown explanations throughout notebooks
-- **Multiple Formats**: Data available in CSV and Excel formats
-- **Project Documentation**: Detailed PDF report of findings and analysis
-
-## 📁 Project Structure
-
-```
-Car/
-├── CAR DATA CLEANING.ipynb          # Main data cleaning notebook
-├── CARS_EDA_PROJECT_DOCUMENT.pdf    # Comprehensive project report
-├── Cars.csv                         # Car dataset (CSV format)
-├── Cars.xls                         # Car dataset (Excel format)
-├── car.py                           # Python script for car class/utilities
-├── requirements.txt                 # Project dependencies
-└── README.md                        # Project documentation
-```
-
-## 📊 Dataset
-
-### Data Files
-- **Cars.csv**: Comma-separated values format of the automotive dataset
-- **Cars.xls**: Microsoft Excel format of the automotive dataset
-
-### Expected Columns
-The dataset typically includes automotive features such as:
-- Vehicle specifications (make, model, year)
-- Performance metrics (engine size, horsepower, etc.)
-- Pricing information
-- Fuel efficiency data
-- Physical characteristics (weight, dimensions, etc.)
-- Other relevant automotive attributes
-
-**Note**: See `CARS_EDA_PROJECT_DOCUMENT.pdf` for detailed dataset documentation and descriptions.
-
-## 🚀 Installation
-
-### Prerequisites
-- Python 3.7 or higher
-- pip (Python package manager)
-- Jupyter Notebook or JupyterLab (optional but recommended)
-
-### Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/piyush00500/Car.git
-   cd Car
-   ```
-
-2. **Create a virtual environment** (recommended)
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Launch Jupyter Notebook**
-   ```bash
-   jupyter notebook
-   ```
-
-## 💻 Usage
-
-### Running the Data Cleaning Notebook
-
-1. Open Jupyter Notebook and navigate to `CAR DATA CLEANING.ipynb`
-2. Run cells sequentially to follow the cleaning process
-3. Observe how different cleaning techniques are applied to the dataset
-4. Examine the transformed data output
-
-### Using the Python Script
-
-```python
-# Import the car module
-from car import *
-
-# Use car utilities in your own analysis
-```
-
-### Analyzing the Project Report
-
-Open `CARS_EDA_PROJECT_DOCUMENT.pdf` to read:
-- Executive summary of findings
-- Detailed analysis of each variable
-- Key insights and conclusions
-- Visualizations and statistical results
-
-## 🔍 Project Components
-
-### CAR DATA CLEANING.ipynb
-This Jupyter Notebook contains:
-
-**Data Loading Section**
-- Import necessary libraries (pandas, numpy, matplotlib, seaborn)
-- Load data from CSV/Excel files
-- Display initial dataset statistics
-
-**Data Inspection Section**
-- Check data types and shapes
-- Identify missing values
-- Detect duplicate records
-- Explore basic statistics
-
-**Data Cleaning Section**
-- Handle missing values (imputation/removal strategies)
-- Remove duplicate entries
-- Address inconsistent data types
-- Clean categorical variables
-- Handle outliers appropriately
-
-**Data Preprocessing Section**
-- Normalize/standardize numerical features
-- Encode categorical variables
-- Create new features if necessary
-- Prepare data for analysis
-
-**Exploratory Data Analysis Section**
-- Univariate analysis of individual features
-- Bivariate analysis of feature relationships
-- Correlation analysis
-- Distribution analysis
-- Visual exploration with plots and charts
-
-### CARS_EDA_PROJECT_DOCUMENT.pdf
-A comprehensive report containing:
-- Project objectives and methodology
-- Dataset overview and characteristics
-- Data cleaning procedures and decisions
-- Statistical findings and insights
-- Visualizations of key patterns
-- Conclusions and recommendations
-
-### car.py
-Python script containing:
-- Car class definitions
-- Utility functions for data processing
-- Helper methods for analysis
-
-## 📈 Key Findings
-
-The EDA uncovers insights about:
-- Distribution of car prices and features
-- Relationships between vehicle specifications and performance
-- Trends in the automotive market
-- Patterns in missing or anomalous data
-- Correlations between different features
-
-*Refer to `CARS_EDA_PROJECT_DOCUMENT.pdf` for detailed findings and visualizations.*
-
-## 🛠️ Technologies Used
-
-### Data Processing & Analysis
-- **Pandas**: Data manipulation and analysis
-- **NumPy**: Numerical computing
-- **Python**: Core programming language
-
-### Visualization
-- **Matplotlib**: Plotting and visualization
-- **Seaborn**: Statistical data visualization
-
-### Development Environment
-- **Jupyter Notebook**: Interactive computing and documentation
-- **Python 3.x**: Programming language
-
-## 📝 Learning Outcomes
-
-This project helps you learn:
-
-✅ Data cleaning best practices
-✅ Handling missing values and duplicates
-✅ Outlier detection and treatment
-✅ Exploratory data analysis techniques
-✅ Data visualization and interpretation
-✅ Statistical analysis methods
-✅ Jupyter Notebook usage
-✅ Python data science workflow
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/improvement`)
-3. Make your changes
-4. Commit your changes (`git commit -am 'Add improvement'`)
-5. Push to the branch (`git push origin feature/improvement`)
-6. Open a Pull Request
-
-Please ensure your code follows PEP 8 standards and includes appropriate documentation.
-
-## 📄 License
-
-This project is open source and available under the MIT License. See the LICENSE file for details.
-
-## 👨‍💻 Author
-
-**Piyush** - [GitHub Profile](https://github.com/piyush00500)
-
-Feel free to reach out with questions, suggestions, or collaboration opportunities!
-
-## 🔗 References
-
-- [Pandas Documentation](https://pandas.pydata.org/)
-- [NumPy Documentation](https://numpy.org/)
-- [Matplotlib Documentation](https://matplotlib.org/)
-- [Seaborn Documentation](https://seaborn.pydata.org/)
-- [Jupyter Notebook](https://jupyter.org/)
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the `CARS_EDA_PROJECT_DOCUMENT.pdf` for detailed information
-2. Review the notebook comments and documentation
-3. Open an issue on GitHub
-4. Contact the repository owner
+This project demonstrates a practical data science workflow — from loading and cleaning raw data to performing statistical analysis and creating meaningful visualizations.
 
 ---
 
-**Last Updated**: 2026
-**Status**: Active Development
- 
+## 📌 Project Overview
+
+The goal of this project is to clean, preprocess, analyze, and visualize car-related data to identify patterns, relationships, trends, and potential data-quality issues.
+
+### 🔄 Data Science Workflow
+
+```text
+Raw Dataset
+     ↓
+Data Loading
+     ↓
+Data Inspection
+     ↓
+Data Cleaning
+     ↓
+Data Preprocessing
+     ↓
+Exploratory Data Analysis
+     ↓
+Statistical Analysis
+     ↓
+Data Visualization
+     ↓
+Insights & Conclusions
+```
+
+---
+
+## ✨ Features
+
+* 📂 Load and inspect automotive datasets
+* 🧹 Handle missing values
+* 🔄 Detect and remove duplicate records
+* 🔍 Identify data-quality issues
+* 📊 Generate descriptive statistics
+* 📈 Perform Exploratory Data Analysis
+* 📉 Analyze distributions and relationships
+* 🔗 Perform correlation analysis
+* 📊 Create data visualizations
+* 📝 Document findings and conclusions
+* 📓 Complete analysis using Jupyter Notebook
+
+---
+
+## 📁 Project Structure
+
+```text
+Car/
+│
+├── CAR DATA CLEANING.ipynb
+├── Cars.csv
+├── Cars.xls
+├── CARS_EDA_PROJECT_DOCUMENT.pdf
+├── car.py
+├── requirements.txt
+└── README.md
+```
+
+### 📄 File Description
+
+| File                            | Description                                    |
+| ------------------------------- | ---------------------------------------------- |
+| `CAR DATA CLEANING.ipynb`       | Main notebook containing data cleaning and EDA |
+| `Cars.csv`                      | Car dataset in CSV format                      |
+| `Cars.xls`                      | Car dataset in Excel format                    |
+| `CARS_EDA_PROJECT_DOCUMENT.pdf` | Detailed project report                        |
+| `car.py`                        | Python script containing project-related code  |
+| `requirements.txt`              | Required Python libraries                      |
+| `README.md`                     | Project documentation                          |
+
+---
+
+## 📊 Dataset
+
+The project uses an automotive dataset containing information related to cars.
+
+The dataset is provided in two formats:
+
+* **CSV** — `Cars.csv`
+* **Excel** — `Cars.xls`
+
+The dataset is used for:
+
+* Data inspection
+* Data cleaning
+* Statistical analysis
+* Relationship analysis
+* Visualization
+* Insight generation
+
+> **Note:** For detailed information about the dataset and analysis, refer to `CARS_EDA_PROJECT_DOCUMENT.pdf`.
+
+---
+
+## 🧹 Data Cleaning
+
+The project covers several important data-cleaning techniques.
+
+### Missing Values
+
+Missing values are checked using:
+
+```python
+df.isnull().sum()
+```
+
+Missing-value percentages are also calculated to understand the extent of missing data.
+
+### Duplicate Records
+
+Duplicate rows are identified using:
+
+```python
+df.duplicated().sum()
+```
+
+Duplicate records can then be removed using:
+
+```python
+df.drop_duplicates(inplace=True)
+```
+
+### Data Type Inspection
+
+The dataset is examined using:
+
+```python
+df.info()
+```
+
+This helps identify incorrect or inconsistent data types.
+
+### Statistical Inspection
+
+Basic statistical information is generated using:
+
+```python
+df.describe()
+```
+
+---
+
+## 🔎 Exploratory Data Analysis
+
+The project performs different levels of EDA, including:
+
+### 📌 Univariate Analysis
+
+Analysis of individual variables to understand:
+
+* Distributions
+* Central tendency
+* Spread
+* Outliers
+* Frequency patterns
+
+### 📌 Bivariate Analysis
+
+Analysis of relationships between two variables.
+
+### 📌 Correlation Analysis
+
+Correlation analysis is performed to understand relationships between numerical variables.
+
+### 📌 Data Visualization
+
+Visualizations are created using:
+
+* Histograms
+* Bar charts
+* Box plots
+* Scatter plots
+* Correlation heatmaps
+* Distribution plots
+
+---
+
+## 📈 Key Analysis Areas
+
+The analysis focuses on understanding:
+
+* Car-related feature distributions
+* Relationships between numerical variables
+* Possible correlations between features
+* Data-quality issues
+* Duplicate records
+* Missing values
+* Outliers and unusual observations
+* Patterns identified through visualization
+
+Detailed results and visualizations are available in:
+
+```text
+CARS_EDA_PROJECT_DOCUMENT.pdf
+```
+
+---
+
+## 🛠️ Technologies Used
+
+### Programming Language
+
+* 🐍 Python
+
+### Data Analysis
+
+* 🐼 Pandas
+* 🔢 NumPy
+
+### Data Visualization
+
+* 📊 Matplotlib
+* 📈 Seaborn
+
+### Development Environment
+
+* 📓 Jupyter Notebook
+
+---
+
+## 🚀 Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/piyush00500/Car.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd Car
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### macOS / Linux
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Start Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+CAR DATA CLEANING.ipynb
+```
+
+and execute the notebook cells sequentially.
+
+---
+
+## 💻 Usage
+
+### Run the Jupyter Notebook
+
+1. Clone the repository.
+2. Install the required dependencies.
+3. Open Jupyter Notebook.
+4. Open `CAR DATA CLEANING.ipynb`.
+5. Run the cells in order.
+6. Review the cleaning process, visualizations, and analysis results.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I practiced:
+
+* ✅ Python for data analysis
+* ✅ Pandas data manipulation
+* ✅ NumPy numerical operations
+* ✅ Missing-value analysis
+* ✅ Duplicate detection and removal
+* ✅ Data preprocessing
+* ✅ Exploratory Data Analysis
+* ✅ Statistical analysis
+* ✅ Data visualization
+* ✅ Correlation analysis
+* ✅ Jupyter Notebook workflow
+* ✅ Data science project documentation
+
+---
+
+## 📚 Project Report
+
+A detailed project report is included in:
+
+```text
+CARS_EDA_PROJECT_DOCUMENT.pdf
+```
+
+The report provides additional information about:
+
+* Project objectives
+* Dataset
+* Methodology
+* Data cleaning
+* Exploratory analysis
+* Visualizations
+* Findings
+* Conclusions
+
+---
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+* 🤖 Building a machine learning model for car price prediction
+* 📊 Creating an interactive Streamlit dashboard
+* 🗄️ Connecting the project to MySQL
+* ☁️ Deploying the application online
+* 📈 Adding more advanced statistical analysis
+* 🧠 Applying feature engineering and predictive modeling
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+### Contribution Steps
+
+```bash
+git checkout -b feature/improvement
+```
+
+Make your changes and commit them:
+
+```bash
+git add .
+git commit -m "Add improvement"
+```
+
+Push your branch:
+
+```bash
+git push origin feature/improvement
+```
+
+Then open a Pull Request.
+
+---
+
+## 👨‍💻 Author
+
+### Piyush
+
+B.Tech Electronics & Communication Engineering Student
+Interested in **Data Science, AI/ML, Software Development, and Technology**.
+
+🔗 **GitHub:**
+https://github.com/piyush00500
+
+---
+
+## 📚 References
+
+* [Pandas Documentation](https://pandas.pydata.org/)
+* [NumPy Documentation](https://numpy.org/)
+* [Matplotlib Documentation](https://matplotlib.org/)
+* [Seaborn Documentation](https://seaborn.pydata.org/)
+* [Jupyter Documentation](https://jupyter.org/)
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving the repository a ⭐ on GitHub.
+
+For questions, suggestions, or collaboration, feel free to open an issue or submit a pull request.
+
+---
+
+### 📌 Project Status
+
+**Status:** 🟢 Active Development
+
+**Last Updated:** September 2026
